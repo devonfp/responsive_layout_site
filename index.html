@@ -7,59 +7,88 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-    <title>Simple Flex Layout with Calc</title>
+    <title>Portfolio</title>
 </head>
 <body>
 <header>
     <nav>
-<h1><a href="#">Student Name</a></h1>
+<h1><a href="#">Devon Poston</a></h1>
  <ul class="top-nav">
     <li><a href="#">home</a></li>
     <li><a href="#portfolio">portfolio</a></li>
+    <li><a href="#skills">skills</a></li>
     <li><a href="#contact">contact</a></li>
  </ul> 
 </nav>
 <div class="me">
-<img src="images/responsive-layout-profile.png" alt="Cartoon image of Student" class="profile-image">
+<img src="images/responsive-layout-profile.png" alt="Picture shows cartoon image of Student" class="profile-image">
 <p class="p-me">Hi! I'm a front-end developer who loves responsive design and css. 
     I recently finished a degree in front-end web development at
      Treehouse and am excited to put all my skills to use!</p>
 </div>   
-    </header>
+</header>
     
-    <div class="port">
-    <h2 id="portfolio">PORTFOLIO</h2>
+
+<main>
+ <div class="port">
+<h2 id="portfolio">PORTFOLIO</h2>  
 </div>
-    <div class="container">                
+<div class="container">                
         <div class="col box-1">
-           
+         <img class="box-img" src="images/portfolio-1.png" alt="Picture shows an example web page">  
+         <h2> Marketing Page</h2>
+                <p>This project shows the front page of a marketing website meant for a specific
+                    business I'm interested in.</p>
         </div>
+        
         <div class="col box-2">
-            
+            <img class="box-img" src="images/portfolio-2.png" alt="Picture shows an example search page">  
+            <h2> Search Page</h2>
+                   <p>This project searches through a specific database 
+                    to find information that the
+                    user is trying to look up.</p>    
         </div>
         
         <div class="col box-3">
-        <h2 class="box-3cap">Travel App</h2>
-        <p class="box-3cap">This project compares travel times based on
+        <img class="box-img" src="images/portfolio-3.png" alt="Picture shows an example Travel app">      
+        <h2>Travel App</h2>
+        <p>This project compares travel times based on
             different transportation methods and tells 
             you the best one.</p>
         </div>
        
         <div class="col box-4">
-           
+            <img class="box-img" src="images/portfolio-4.png" alt="Picture shows an example map">      
+            <h2>Map of Favorite Spots</h2>
+            <p>This project shows pictures from a recent trip to
+                the viewer and allows them to easily navigate
+                through photos.</p>
         </div>
         <div class="col box-5">
-          
+            <img class="box-img" src="images/portfolio-5.png" alt="Picture shows an example photo gallery">      
+            <h2>Photo Gallery</h2>
+            <p>This project shows pictures from a recent trip to
+                the viewer and allows them to easily navigate
+                through photos.</p> 
         </div>
         <div class="col box-6">
-            
-        </div>
+            <img class="box-img" src="images/portfolio-6.png" alt="Picture shows an online example calculator">      
+            <h2>Calculator</h2>
+            <p>Someone can enter in the numbers they want, and 
+                press the big blue button and get the result.</p>    
       </div>
-
-<main>
-
-</main>
-
+</div>
+<div class="con">
+    <h3 id="skills">SKILLS</h3>
+    <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Ruby</li>
+        <li>Rails</li>
+      </ul>       
+</div>
+    
 <div class="con">
     <h3 id="contact">CONTACT</h3>
     <p>If you're interested in chatting or want more 
@@ -69,13 +98,16 @@
     <p class="conp2"> <br>Phone  <b>+1 (111)555-1234</b></p>
     
     <p class="conp2"><br>Email   <b>email@yoursite.com</b></p>       
-        </div>
+</div>
+</main>       
+
 <footer>
-<h2>Student Name</h2>
+<h2>Devon Poston</h2>
 <ul class="footer-nav">
 <li class="top"><a href="#top">back to top</a></li>
 <li class="full"><a href="#top">home</a></li>
 <li class="full"><a href="#portfolio">portfolio</a></li>
+<li class="full"><a href="#skills">skills</a></li>
 <li class="full"><a href="#contact">contact</a></li>
 </ul>
 </footer>

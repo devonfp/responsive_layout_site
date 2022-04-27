@@ -1,362 +1,334 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /*remove all of the default margin and padding
-     that browsers add to elements.*/
-  }
-  
-
-  body {
-    margin: 0 auto;
-    max-width: 1024px;
-    font-family: 'Roboto', sans-serif;
-    min-height: 100vh;
-    color: black;
-    background-color: #FAFAFA;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*remove all of the default margin and padding
+   that browsers add to elements.*/
 }
+
+
+body {
+  margin: 0 auto;
+  max-width: 1024px;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  color: black;
+  background-color: #FAFAFA;
+}
+
 
 header {
-    margin-bottom: -350px;
-}
-.col header {
+display: flex;
+flex-direction: column;
 
 }
+
+
 .me {
-    display: flex;
-    flex-direction: row-reverse;
-    position: relative;
-    top: -270px;
-    padding: 25px;
-    margin: 50px;
-    margin-bottom: 100px;
-    flex-wrap: wrap;
-    justify-content: center;
-    left: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 25px;
+  margin: 50px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .p-me {
-    font-size: small;
-    width: 400px;
-    position: relative;
-    left: -50px;
-    bottom: -40px;
+width: 400px;
+align-self: center;
+font-size: medium;
 }
 
 .profile-image {
-    position: relative;
-    right: 50px;
-    width: 310px;
+width: 200px;
+border-radius: 5px;
 }
-  
-  ul {
-    list-style: none;  /*removes bullet points*/
-    padding-left: 0;   /* remove the default left indentation
-                        that is added as left padding by the browser.*/ 
-  }
 
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-  }
-
-  nav {   /*styles for navigation box*/
-    font-family: "Roboto", Arial, Verdana;
-    font-weight: 700;
-    letter-spacing: .05em;
-    padding: 25px;
-    padding-bottom: 300px;
-  }
-
-  /*STYLES FOR TOP-NAV BOX*/
-  h1, .top-nav {  /*aligns content to center of top <nav> box */
-    text-align: center;
-  }
-  
-  .top-nav, .top-nav li {
-    width: 100%;
-  }
-  
-  h1 a, .top-nav a {  /*gives the top <nav> box <a> tag a color*/
-    color: #000;
-    text-transform: none;
-  }
-
-  .top-nav {
-    margin-top: 30px;
-  }
-  
-  .top-nav li {     
-    padding: 10px 0;         
-    margin: 5px auto;        /* spaces out the background for each list*/
-    background-color: #fff; /*gives top <nav> lists a white background*/
-  }
-  
-  .top-nav a {
-    text-transform: uppercase;
-  }
-
-   /*PORTFOLIO ITEMS COLUMN LAYOUT STYLES*/
-   .container {
-    max-width: 1100px;
-    padding: 80px 10px 10px;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    background-color: white;  
-    margin-bottom: 20px;
-  }
-
-  .port {
-    position: relative;
-      left: 100px;
-      bottom: -50px;
-      width: 130px;
-  }
-
-  .col {
-    margin: 10px;  
-    /*10px margin on all sides to separate
-     each of the boxes from each other.*/
-     margin-bottom: 150px;
-     min-height: 270px;
-    /* static starting height of 250px*/
-    color: white;
-    text-align: center;
-    letter-spacing: 1px;
-    padding-top: 5px;
-  }
-
-  .box-1 {
-    background-image: url('../images/portfolio-1.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+ul {
+  list-style: none;  /*removes bullet points*/
+  padding-left: 0;   /* remove the default left indentation
+                      that is added as left padding by the browser.*/ 
 }
-  
-  .box-2 {
-    background-image: url('../images/portfolio-2.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .box-3 {
-    background-image: url('../images/portfolio-3.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
 
-  .box-3cap {
-   color: black;
-   align-self: center;
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
 
-  }
-  
-  .box-4 {
-    background-image: url('../images/portfolio-4.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .box-5 {
-    background-image: url('../images/portfolio-5.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .box-6 {
-    background-image: url('../images/portfolio-6.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
+a:hover {
+  color: blue;
+  transition: all .5s;
+ }
 
+
+nav {   /*styles for navigation box*/
+  font-family: "Roboto", Arial, Verdana;
+  font-weight: 700;
+  letter-spacing: .05em;
+  padding: 25px;
+  background: white;
+  border-radius: 5px;
+  border: solid black;
+box-shadow: 2px 5px 5px grey;}
+
+/*STYLES FOR TOP-NAV BOX*/
+h1, .top-nav {  /*aligns content to center of top <nav> box */
+  text-align: center;
+}
+
+.top-nav, .top-nav li {
+  width: 100%;
+}
+
+h1 a, .top-nav a {  /*gives the top <nav> box <a> tag a color*/
+  color: #000;
+  text-transform: none;
+}
+
+.top-nav {
+  margin-top: 30px;
+}
+
+.top-nav li {     
+  padding: 10px 0;         
+  margin: 5px auto;        /* spaces out the background for each list*/
+  background-color: #fff; /*gives top <nav> lists a white background*/
+}
+
+.top-nav a {
+  text-transform: uppercase;
+}
+
+ /*PORTFOLIO ITEMS COLUMN LAYOUT STYLES*/
+ .port {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+ 
+ .container {
+  max-width: 1100px;
+  padding: 20px 10px 10px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  background: white;  
+  margin-bottom: 20px;
+  border-top: solid #000;
+  border-bottom: 4px solid #ccc;
+  border-radius: 0 0 5px 5px;
+  transition: all .5s;
+}
+
+.container:hover {
+border-color: black;
+}
+
+.col {
+margin: 10px;  
+/*10px margin on all sides to separate
+ each of the boxes from each other.*/
+ margin-bottom: 150px;
+ min-height: 250px;
+/* static starting height of 250px*/
+color: white;
+text-align: center;
+letter-spacing: 1px;
+padding-top: 5px;
+}
+
+.box-img {
+width: 100%;
+border-radius: 5px;
+}
+
+h2, p, .box {
+color:#000;
+}
+
+.box p {
+letter-spacing: 1rem;
+}
+
+/*SKILLS & CONTACT SECTION STYLES*/
 #contact {
-position: relative;
-top: -50px;
+margin-bottom: 40px;
 }
 
+#skills {
+margin-bottom: 40px;
+}
 
 .con {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    position: relative;
-    bottom: -150px;
-    font-size: large;
-  }
-
- .con p {
-    width: 310px; 
- }
- 
- .conp2 {
-     text-align: center;
- }
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-  padding: 0 20px;
-  padding-bottom: 350px;
-  height: 100px;
-  background-color: #FAFAFA;
+display: flex;
+font-size: large;
+align-items: center;
+margin-top: 200px;
+font-size: larger;
+background-color: white;
+padding: 10px 10px;
+border-bottom: 4px solid #ccc;
+border-radius: 6px;
+transition: all .5s;
+flex-direction: column;
 }
+
+.con:hover {
+border-color: black;
+}
+
+.con p {
+  width: 250px; 
+}
+
+.conp2 {
+   text-align: center;
+}
+
+.skills li {
+border-radius: 6px;
+display: inline-block;
+background: #070707;
+color: white;
+padding: 5px 10px;
+margin: 2px;
+}
+
+
+/*FOOTER STYLES*/
+footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: auto;
+padding: 0 20px;
+padding-bottom: 350px;
+height: 100px;
+background-color: #FAFAFA;
+}
+
 footer h2 {
-    margin-top: 650px;
+  margin-top: 650px;
 }
 
 .footer-nav {
-    margin-top: 650px;
-    font-weight: 600;
+  margin-top: 650px;
+  font-weight: 600;
+}
+
+.full {
+display: none;
 }
 
 
+
+/*MEDIA QUERIES*/ 
+@media (min-width: 768px) {
+  .top-nav {
+    margin-top: 0;
+  }
+  .top-nav li {
+      display: inline-block; 
+      /*switches list to a row on the same line instead of a column*/ 
+      width: auto;  
+      /* removes the width: 100% that we set in the mobile-first code.*/
+      margin-right: 15px; 
+      /* gives the li elements a bit of space between each other.*/
+      background-color: transparent; 
+      /*removes the background color of white that was set in the mobile-first code.*/ 
+    }
   
-  /*MEDIA QUERIES*/ 
-  @media (min-width: 768px) {
-    .top-nav {
-      margin-top: 0;
+    .top-nav li:last-child {
+      margin-right: 0;
+      /*removes the margin-right on the last li element
+      so that the nav links stay perfectly centered in the browser.*/ 
     }
-    .top-nav li {
-        display: inline-block; 
-        /*switches list to a row on the same line instead of a column*/ 
-        width: auto;  
-        /* removes the width: 100% that we set in the mobile-first code.*/
-        margin-right: 15px; 
-        /* gives the li elements a bit of space between each other.*/
-        background-color: transparent; 
-        /*removes the background color of white that was set in the mobile-first code.*/ 
-      }
-    
-      .top-nav li:last-child {
-        margin-right: 0;
-        /*removes the margin-right on the last li element
-        so that the nav links stay perfectly centered in the browser.*/ 
-      }
-    
-      .top-nav a {
-        color: rgb(8, 8, 8);
-      }
+  
+    .top-nav a {
+      color: rgb(8, 8, 8);
     }
-      @media (min-width: 768px) {
-      .port {
-        position: relative;
-          left: 350px;
-          bottom: -50px;
-              width: 130px;
-      }
-    }
-    @media (min-width: 1024px) {
-        .port {
-            position: relative;
-              left: 450px;
-              bottom: -50px;
-              width: 130px;
-        }
-    } 
+  }
 
 
-      @media (min-width: 768px) {
-        .container {
-          display: flex;
-          /*we add display: flex; to our container div so
-           that all of the boxes go onto one row.*/ 
-          flex-wrap: wrap;
-          /* wrap; breaks the flex items into multiple lines.*/
-        }
-      .col {
-        flex-basis: calc(50% - 20px);
-        /* this calc ensures the boxes take up exactly 50% in our 2 column layout
-         without breaking to a new line due to the 20px total left and
-          right margin we added in the mobile-first code.*/
-      }
-    }
-
-    @media (min-width: 1024px) {
-        .col {
-          flex-basis: calc(33.333% - 20px);
-          /*sets the boxes width to take up 1/3rd of the containers width.
-           Again removing the margins we set from the 33.333% width we want
-            the items to take up.*/
-        }
-      }
-    
-    
-      @media (min-width: 1024px) {
-        nav {  /*flex parent*/
-          display: flex;
-          justify-content: space-between;
-          /*pushes the name and navigation to opposite sides of browser*/
-          align-items: center;
-          /* vertically centers the name and navigation*/
-          padding-bottom: 300px;
-        }
-
-      .top-nav, 
-      .top-nav li {
-        width: initial;
-        /* removes the width: 100%; we have set on the ul and li elements. */
-        margin-bottom: 0; /*removes the 16px bottom margin*/
-
-      }
-    }
     @media (min-width: 768px) {
-        .top {
-          display: none;
-        }
-        .full {
-          display: inline-block;
-          margin-left: 20px;
-        }
+      .container {
+        display: flex;
+        /*we add display: flex; to our container div so
+         that all of the boxes go onto one row.*/ 
+        flex-wrap: wrap;
+        /* wrap; breaks the flex items into multiple lines.*/
+      }
+    .col {
+      flex-basis: calc(50% - 20px);
+      /* this calc ensures the boxes take up exactly 50% in our 2 column layout
+       without breaking to a new line due to the 20px total left and
+        right margin we added in the mobile-first code.*/
+    }
+  }
+
+  @media (min-width: 1024px) {
+      .col {
+        flex-basis: calc(33.333% - 20px);
+        /*sets the boxes width to take up 1/3rd of the containers width.
+         Again removing the margins we set from the 33.333% width we want
+          the items to take up.*/
+      }
+    }
+  
+  
+    @media (min-width: 1024px) {
+      nav {  /*flex parent*/
+        display: flex;
+        justify-content: space-between;
+        /*pushes the name and navigation to opposite sides of browser*/
+        align-items: center;
+        /* vertically centers the name and navigation*/
       }
 
-    @media (max-width: 768px) {
-        .full {
-          display: none;
-        }
+    .top-nav, 
+    .top-nav li {
+      width: initial;
+      /* removes the width: 100%; we have set on the ul and li elements. */
+      margin-bottom: 0; /*removes the 16px bottom margin*/
+
     }
-
-        @media (min-width: 768px) {
-            .me {
-                    display: flex;
-                    flex-direction: row-reverse;
-                    position: relative;
-                    top: -270px;
-                    padding: 25px;
-                    margin: 50px;
-                    margin-bottom: 100px;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    left: 50px;
-            }
-        
-       .p-me {
-        font-size: x-large;
-        width: 400px;
-        position: relative;
-        left: -110px;
-        bottom: -40px;
-    }     
-
+  }
+  @media (min-width: 768px) {
+      .top {
+        display: none;
+      }
+      .full {
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+      
+    
+    
+    @media (min-width: 768px) {
+      .me {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 25px;
+      margin: 50px;
+      margin-bottom: 100px;
+      flex-wrap: nowrap;
+      justify-content: center;
+       }
+  .p-me {
+  font-size: x-large;    
+ }
 }
- @media (min-width: 768px) {
-   .con p {
-    width: 510px;
-   }
+
+@media (min-width: 768px) {
+ .con p {
+  width: 510px;
+ }
 } 
 
-        @media (min-width: 1024px) { /*desktop view*/
-               .p-me {
-                font-size: x-large;
-                width: 400px;
-                position: relative;
-                left: -150px;
-                bottom: -40px;
-               }
-              }
+@media (min-width: 1024px) { /*desktop view*/
+.p-me {
+font-size: x-large;
+}
+}
