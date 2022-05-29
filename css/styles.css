@@ -71,7 +71,8 @@ nav {   /*styles for navigation box*/
   background: white;
   border-radius: 5px;
   border: solid black;
-box-shadow: 2px 5px 5px grey;}
+box-shadow: 2px 5px 5px grey;
+}
 
 /*STYLES FOR TOP-NAV BOX*/
 h1, .top-nav {  /*aligns content to center of top <nav> box */
